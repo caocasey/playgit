@@ -5,6 +5,8 @@
 # Home page
 GET         /                    controllers.Application.index()
 GET         /history             controllers.Application.history()
+GET         /analytics           controllers.Application.analytics()
+
 
 POST        /repo                controllers.Application.addRepo()
 GET         /repos               controllers.Application.getRepos()

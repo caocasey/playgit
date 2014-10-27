@@ -19,6 +19,13 @@ public class Application extends Controller {
     public static Result history() {
         return ok(history.render());
     }
+    public static Result analytics() {
+        return ok(analytics.render());
+    }
+
+
+
+
     public static Result addRepo(){
         Repo repo = Form.form(Repo.class).bindFromRequest().get();
         repo.save();
