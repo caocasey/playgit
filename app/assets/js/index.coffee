@@ -1,4 +1,8 @@
 $ ->
-  $.get "/users" , (users) ->
-    $.each users, (index, user) ->
-      $('#users').append $("<li>").text user.name
+  $.get "/repos" , (repos) ->
+    $.each repos, (index, repo) ->
+      $('#repos').append $("<li>").text repo.name
+
+
+
+
