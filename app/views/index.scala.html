@@ -1,25 +1,27 @@
-<!DOCTYPE html>
+@(message: String)
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
 <script type="text/javascript" src='@routes.Assets.at("js/index.js")' ></script>
 <script type="text/javascript" src='@routes.Assets.at("js/search.js")' ></script>
-
-
 
 @main("Welcome to Play") {
 
  @*   @play20.welcome(message, style = "Java") *@
 
 
+
+
+
     <a href="/history">Check your search history</a>
+
+
 
     <form id="repo" action="@routes.Application.addRepo()" method="post">
         <input id="reponame" type="test" name="name" />
         <input type="button" id="button" value="Search" />
+        <button id="button">Add user</button>
     </form>
     <div id="result"></div>
-
-
 
 
 

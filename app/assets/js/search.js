@@ -8,14 +8,14 @@ $(document).ready(function(){
             dataType:"json",
             success:function(data){
                 var name="<ul>";
-            
-              //  $.each(data,function(index,n){
 
-                        name += "<li>" + data.items[0].name + "</li>";
-                    for(var j =1;j < data.items.length-1;j++) {
-                        name += "<li>" + data.items[j].name + "</li>";
-                    }
-              //  });
+                //  $.each(data,function(index,n){
+
+                name += "<li>" + data.items[0].name + "</li>";
+                for(var j =1;j < data.items.length-1;j++) {
+                    name += "<li>" + data.items[j].name + "</li>";
+                }
+                //  });
                 name+="</ul>";
                 $('#result').append(name);
             }

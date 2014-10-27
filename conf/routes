@@ -3,11 +3,11 @@
 # ~~~~
 
 # Home page
-GET         /                     controllers.Application.index()
-GET         /history              controllers.Application.history()
+GET         /                    controllers.Application.index()
+GET         /history             controllers.Application.history()
 
-POST        /repo                 controllers.Application.addRepo()
-GET         /repos                controllers.Application.getRepos()
+POST        /repo                controllers.Application.addRepo()
+GET         /repos               controllers.Application.getRepos()
 
 
 

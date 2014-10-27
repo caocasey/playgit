@@ -11,7 +11,7 @@ import javax.persistence.Id;
 
 
 @Entity
-public class User extends Model {
+public class Repo extends Model {
 
     @Id
     public String id;
