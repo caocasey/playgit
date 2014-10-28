@@ -10,13 +10,13 @@ $(document).ready(function(){
                 url: "https://api.github.com/search/repositories?q=" + rname,
                 dataType: "json",
                 success: function (data) {
-                    var name = "<ul>";
+                    var name = "<ul id='list' action='/analytics.scale.html'>";
 
                         //  $.each(data,function(index,n){
                         if (data.total_count !== 0) {
 
                             for (var j = 0; j < data.items.length; j++) {
-                                name += "<li><a id=myLink href='/analytics' >" + data.items[j].name + "</a></li>";
+                                name += "<li id="+ data.items[j].full_name +"><a id=myLink href='/analytics' >" + data.items[j].name + "</a></li>";
                             }
                         }
                         else {
@@ -32,5 +32,5 @@ $(document).ready(function(){
         return false;
     });
 
-    
+
 });

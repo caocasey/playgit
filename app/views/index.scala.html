@@ -3,6 +3,7 @@
 <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
 <script type="text/javascript" src='@routes.Assets.at("js/index.js")' ></script>
 <script type="text/javascript" src='@routes.Assets.at("js/search.js")' ></script>
+<script type="text/javascript" src='@routes.Assets.at("js/analytics.js")' ></script>
 
 @main("Welcome to Play") {
 
@@ -21,7 +22,15 @@
         <input type="button" id="button" value="Search" />
         <button id="button">Save search</button>
     </form>
+
+    <p>
+        <a href="#result">See result</a>
+        <a href="#result1">See Commit information</a>
+    </p>
     <div id="result"></div>
+    <div id="result1"></div>
+    <div id="result2"></div>
+
 
 
 
