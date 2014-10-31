@@ -1,37 +1,148 @@
 @(message: String)
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
-<script type="text/javascript" src='@routes.Assets.at("js/index.js")' ></script>
-<script type="text/javascript" src='@routes.Assets.at("js/search.js")' ></script>
-<script type="text/javascript" src='@routes.Assets.at("js/analytics.js")' ></script>
-
-@main("Welcome to Play") {
-
- @*   @play20.welcome(message, style = "Java") *@
 
 
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Play github</title>
 
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
 
+        <script type="text/javascript" src='@routes.Assets.at("js/index.js")' ></script>
+        <script type="text/javascript" src='@routes.Assets.at("js/search.js")' ></script>
+        <script type="text/javascript" src='@routes.Assets.at("js/analytics.js")' ></script>
+        <link href='@routes.Assets.at("css/main.css")' rel='stylesheet' type='text/css' />
 
-    <a href="/history">Check your search history</a>
+        <!--Slides plugin -->
 
+        <!--Timeline plugin -->
+        <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media="all" rel="stylesheet">
+        <link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" media="all" rel="stylesheet">
+       <!-- <link href='@routes.Assets.at("css/plugin/styles.css")' media="all" rel="stylesheet">  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.1/modernizr.min.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src='@routes.Assets.at("js/plugin/main.js")'></script>
 
-
-    <form id="repo" action="@routes.Application.addRepo()" method="post">
-        <input id="reponame" type="test" name="name" />
-        <input type="button" id="button" value="Search" />
-        <button id="button">Save search</button>
-    </form>
-
-    <p>
-        <a href="#result">See result</a>
-        <a href="#result1">See Commit information</a>
-    </p>
-    <div id="result"></div>
-    <div id="result1"></div>
-    <div id="result2"></div>
+    </head>
 
 
 
+    <body>
+            <!--This is the catalog -->
+        <div id="home" class="header">
+            <div class="container">
+                <div class="logo">
+                    <a href="#"><img src='@routes.Assets.at("images/logo.png")' title="logo" /></a>
+                </div>
+                    <!----start-top-nav---->
+                <nav class="top-nav">
+                    <ul>
+                        <li class="active"><a href="#home" class="scroll">Home <span> </span></a></li>
+                        <li class="page-scroll"><a href="#ser" class="scroll">Search <span> </span></a></li>
+                        <li class="page-scroll"><a href="#his" class="scroll">History<span> </span></a></li>
+                        <li class="page-scroll"><a href="#ci" class="scroll">Commit info <span> </span></a></li>
+                        <li class="page-scroll"><a href="#mg" class="scroll">Management<span> </span></a></li>
+                        <li class="contatct-active" class="page-scroll"><a href="#ct" class="scroll">Contact me </a></li>
+                    </ul>
+                    <a href="#" id="pull"><img src='@routes.Assets.at("images/nav-icon.png")' title="menu" /></a>
+                </nav>
+            </div>
+        </div>
 
-}
+
+
+
+            <!--Slide plugin v1.54-->|
+            <!----start-slider-script---->
+
+            <!----- //End-slider---->
+
+
+
+
+
+
+
+
+
+
+
+            <!----start-services---->
+        <div id="ser" class="search">
+            <div class="container">
+                <div class="search-head text-center">
+                    <h>Search repository</h>
+                    <form id="repo" action="@routes.Application.addRepo()" method="post">
+                        <input id="reponame" type="test" name="name" />
+                        <input type="button" id="button" value="Search" />
+                        <button id="button">Save search</button>
+                    </form>
+                    <div id="result"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="his" class="history">
+            <div class="container">
+                <div class="history-head">
+                    <h>Search history</h>
+                    <ul id="repos"></ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="ci" class="commit">
+            <div class="container">
+                <div class="commit-head text-center">
+                    <h3>Commit information</h3>
+                    <div id="result1"></div>
+                    <div id="result2"></div>
+                    <div class="timeline animated">
+                        <div id="result3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="mg" class="management">
+            <div class="container">
+                <div class="management text-center">
+                    <h3>Management</h3>
+                    <p>I use source tree to manage the development route.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="ct" class="contact">
+            <div class="container">
+                <div class="contact-head text-center">
+                    <h3>Contact me</h3>
+                    <span>This is a homework for zengularity.</span>
+                    <p>Courage, innovation and hard working are the key words of my career. When meet difficulties I will not easily give up. I always come up with new ideas and have strong ability to learn new things.
+                        A new day begin when the sun rises, I am a positive and optimistic person, I do have confidence with my future.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+            <!--Footer-->
+        <div class="footer">
+            <div class="container">
+                <div class="footer-right">
+                    <p>Copyright &copy; 2014.CAO YINGXI</p>
+
+                    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
