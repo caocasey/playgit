@@ -1,5 +1,5 @@
 html {
-  font-family: sans-serif;  
+  font-family: sans-serif;
 }
 body {
   margin: 0;
@@ -7,14 +7,14 @@ body {
 
 
 #home {
-   
- } 
+
+ }
 .header{
 
 }
 .container{
 
-} 
+}
 .logo{
       float:left;
 
@@ -87,7 +87,7 @@ nav a#pull {
 
 .top{
 
-} 
+}
 .callbacks_container{
 
 }
