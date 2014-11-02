@@ -7,24 +7,14 @@ body {
 }
 
 
-#home {
 
- }
-.header{
-
-}
-.container{
-
-}
 .logo{
       float:left;
       padding-top:1em ;
 
 }
 
-.top_nav{
 
-}
 .top-nav ul li a{
 	color: #000000;
 	padding: 0.2em 1.9em;
@@ -65,34 +55,8 @@ nav a {
 	text-decoration: none;
 	line-height: 40px;
 }
-nav a:hover{
-	text-decoration:none;
-	color:#00A2C1;
-}
-nav a#pull {
-	display: none;
-}
-.active{
-
-}
-.page_scroll{
-
-}
-#pull{
 
 
-}
-
-
-
-
-
-.top{
-
-}
-.callbacks_container{
-
-}
 
 
 
@@ -188,14 +152,14 @@ nav a#pull {
 
 
 /*--start-management--*/
-.management{
+.discovery{
 
 	background: floralwhite;
     background-size: cover;
     text-align: center;
 }
 
-.management-head h{
+.discovery-head h{
 	text-transform: uppercase;
 	color: forestgreen;
 	font-weight: 700;
@@ -203,7 +167,15 @@ nav a#pull {
 	margin: 0 0 0.5em 0;
    
 }
-.management-head p{
+.discovery-head div1{
+    font-size: 18px;
+    color: palevioletred;
+
+}
+.discovery-head div2{
+
+    font-size: 15px;
+    color: darkgreen;
 
 }
 

@@ -12,6 +12,7 @@
         <script type="text/javascript" src='@routes.Assets.at("js/index.js")' ></script>
         <script type="text/javascript" src='@routes.Assets.at("js/search.js")' ></script>
         <script type="text/javascript" src='@routes.Assets.at("js/analytics.js")' ></script>
+        <script type="text/javascript" src='@routes.Assets.at("js/discovery.js")' ></script>
         <link href='@routes.Assets.at("css/main.css")' rel='stylesheet' type='text/css' />
 
         <!--Slides plugin -->
@@ -24,8 +25,6 @@
         <script src='@routes.Assets.at("js/plugin/main.js")'></script>
 
     </head>
-
-
 
     <body>
             <!--This is the catalog -->
@@ -41,28 +40,14 @@
                         <li class="page-scroll"><a href="#ser" class="scroll">Search <span> </span></a></li>
                         <li class="page-scroll"><a href="#his" class="scroll">History<span> </span></a></li>
                         <li class="page-scroll"><a href="#ci" class="scroll">Commit info <span> </span></a></li>
-                        <li class="page-scroll"><a href="#mg" class="scroll">Management<span> </span></a></li>
+                        <li class="page-scroll"><a href="#dis" class="scroll">Discovery<span> </span></a></li>
                         <li class="contatct-active" class="page-scroll"><a href="#ct" class="scroll">Contact me </a></li>
                     </ul>
-                    <a href="#" id="pull"><img src='@routes.Assets.at("images/nav-icon.png")' title="menu" /></a>
                 </nav>
             </div>
         </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-            <!----start-services---->
         <div id="ser" class="search">
             <div class="container">
                 <div class="search-head text-center">
@@ -86,7 +71,7 @@
                     <p>Committer list</p>
                     <div1 id="result1"></div1>
                     <p>Committer impact</p>
-                    <div2 id="result2"></div2>
+                    <div2 id="result2"><br></div2>
                     <p>Commite Timeline</p>
                     <div3 id="result3"></div3>
                 </div>
@@ -102,11 +87,19 @@
             </div>
         </div>
 
-        <div id="mg" class="management">
+        <div id="dis" class="discovery">
             <div class="container">
-                <div class="management-head text-center">
-                    <h>Management</h>
-                    <p>I use source tree to manage the development route.</p>
+                <div class="discovery-head text-center">
+                    <h>Discovery</h>
+                    <p>Hey dear friends, you can type your friend's name or your name to explore some secrets here.</p>
+                    <form id="repo">
+                        <input id="username" type="test" name="name" /><br>
+                        <input type="button" id="button1" value="Discovery" />
+                    </form>
+                    <div1 id="result4"></div1>
+                    <div2 id="result5"></div2>
+
+
                 </div>
             </div>
         </div>

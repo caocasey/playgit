@@ -5,7 +5,7 @@ $(document).on('click', '#list li a', function (){
 
     value = $(this).parent().attr('id');
 
-    alert(value);
+    //alert(value);
 
 
             $.ajax({
@@ -61,7 +61,9 @@ $(document).on('click', '#list li a', function (){
                 timeline += "<div class='timeline animated'><div class='timeline-row'><div class='timeline-time'><small>"+data[b].commit.committer.date+"</small></div><div class='timeline-icon'><div class='bg-primary'><i class='fa fa-pencil'></i></div></div><div class='panel timeline-content'><div class='panel-body'><h2>"+data[b].commit.committer.name+"</h2></div></div></div></div>";
 
             }
-
+            committer +="<hr>";
+            output +="<hr>";
+            timeline +="<hr>";
             $('#result1').append(committer);
             $('#result2').append(output);
             $('#result3').append(timeline);
