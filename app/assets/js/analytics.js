@@ -21,7 +21,7 @@ $(document).on('click', '#list li a', function (){
                 if (data.length <= 100) {
 
                     for (var i = 0; i < data.length; i++) {
-                        committer += "<li>" + data[i].commit.committer.name + "<br>" + data[i].commit.committer.date + "</li>";
+                        committer += "<li><span style='color:#CC6600'>" + data[i].commit.committer.name + "</span>&nbsp<span>committed</span>&nbsp:"+data[i].commit.message +"<span>&nbspat&nbsp</span><span style='color:#CC6600'>" +data[i].commit.committer.date + "</span></li>";
                         myArray.push(data[i].commit.committer.name);
 
                     }
@@ -51,7 +51,7 @@ $(document).on('click', '#list li a', function (){
             }
             var output = '';
             for (var property in map) {
-                output += property + ': ' + map[property]+'; ';
+                output += property + "&nbspcommitted:&nbsp<span style='color:mediumvioletred'>"+map[property]+"</span>&nbsptimes; ";
             }
             console.log(map);
 

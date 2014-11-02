@@ -20,7 +20,6 @@
         <link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" media="all" rel="stylesheet">
         <link href='@routes.Assets.at("css/plugin/styles.css")' media="all" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.1/modernizr.min.js"></script>
-        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
         <script src='@routes.Assets.at("js/plugin/main.js")'></script>
 
@@ -33,7 +32,7 @@
         <div id="home" class="header">
             <div class="container">
                 <div class="logo">
-                    <a href="#"><img src='@routes.Assets.at("images/logo.png")' title="logo" /></a>
+                    <a href="#"><img src='@routes.Assets.at("images/logo.png")' height="40" width="200" title="logo" /></a>
                 </div>
                     <!----start-top-nav---->
                 <nav class="top-nav">
@@ -53,11 +52,6 @@
 
 
 
-            <!--Slide plugin v1.54-->
-            <!----start-slider-script---->
-
-            <!----- //End-slider---->
-
 
 
 
@@ -74,11 +68,27 @@
                 <div class="search-head text-center">
                     <h>Search repository</h>
                     <form id="repo" action="@routes.Application.addRepo()" method="post">
-                        <input id="reponame" type="test" name="name" />
+                        <input id="reponame" type="test" name="name" /><br>
                         <input type="button" id="button" value="Search" />
                         <button id="button">Save search</button>
                     </form>
                     <div id="result"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="ci" class="commit">
+            <div class="container">
+                <div class="commit-head text-center">
+                    <h>Commit information</h>
+                    <p>Committer list</p>
+                    <div1 id="result1"></div1>
+                    <p>Committer impact</p>
+                    <div2 id="result2"></div2>
+                    <p>Commite Timeline</p>
+                    <div3 id="result3"></div3>
                 </div>
             </div>
         </div>
@@ -92,24 +102,10 @@
             </div>
         </div>
 
-        <div id="ci" class="commit">
-            <div class="container">
-                <div class="commit-head text-center">
-                    <h3>Commit information</h3>
-
-                    <div id="result1"></div>
-                    <div id="result2"></div>
-                    <div id="result3"></div>
-                </div>
-            </div>
-        </div>
-
-
-
         <div id="mg" class="management">
             <div class="container">
-                <div class="management text-center">
-                    <h3>Management</h3>
+                <div class="management-head text-center">
+                    <h>Management</h>
                     <p>I use source tree to manage the development route.</p>
                 </div>
             </div>
@@ -118,10 +114,14 @@
         <div id="ct" class="contact">
             <div class="container">
                 <div class="contact-head text-center">
-                    <h3>Contact me</h3>
+                    <h>Contact me</h><br>
                     <span>This is a homework for zengularity.</span>
-                    <p>Courage, innovation and hard working are the key words of my career. When meet difficulties I will not easily give up. I always come up with new ideas and have strong ability to learn new things.
-                        A new day begin when the sun rises, I am a positive and optimistic person, I do have confidence with my future.</p>
+                    <p1>Courage, innovation and hard working are the key words of my career. When meet difficulties I will not easily give up. I always come up with new ideas and have strong ability to learn new things.
+                        A new day begin when the sun rises, I am a positive and optimistic person, I do have confidence with my future.</p1><br>
+                    <p2>Want to discovery more? Click the picture below redirect to Linkedin</p2>
+                    <div>
+                        <a href="http://fr.linkedin.com/pub/yingxi-cao/61/4b5/aa9"><img id='portrait' src='@routes.Assets.at("images/yingxi.jpg")'/></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -137,7 +137,6 @@
             <div class="container">
                 <div class="footer-right">
                     <p>Copyright &copy; 2014.CAO YINGXI</p>
-
                     <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
                 </div>
             </div>
