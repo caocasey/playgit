@@ -8,7 +8,7 @@ $(document).on('click', '#list li a', function (){
     //alert(value);
 
 
-            $.ajax({
+        $.ajax({
         type: "GET",
         url: "https://api.github.com/repos/" + value + "/commits",
         //url: " https://api.github.com/repos/caocasey/pfe3/commits",
