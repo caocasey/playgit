@@ -34,28 +34,28 @@ body {
 	right: 0;
 }
 
+
 nav {
-	position: relative;
-	float: right;
+    position: relative;
+    float: right;
 }
 nav ul {
-	padding: 0;
-	float: right;
-	margin: 0.75em;
+    padding: 0;
+    float: right;
+    margin: 0.75em;
 }
 nav li {
-	display: inline;
-	float: left;
-	position:relative;
+    display: inline;
+    float: left;
+    position:relative;
 }
 nav a {
-	color: #fff;
-	display: inline-block;
-	text-align: center;
-	text-decoration: none;
-	line-height: 40px;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
 }
-
 
 
 

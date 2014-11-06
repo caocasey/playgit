@@ -12,7 +12,7 @@ $(document).ready(function(){
                 success: function (data) {
                     var name = "<ul id='list'>";
 
-                        //  $.each(data,function(index,n){
+
                         if (data.total_count !== 0) {
 
                             for (var j = 0; j < data.items.length; j++) {
